@@ -1,3 +1,24 @@
+/* GENERAL STYLE */
+* {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-size: .65rem;
+    color: #797b80;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
 /* PARTE SUPERIORE CONTENUTO */
 #upper {
     display: flex;
@@ -18,16 +39,117 @@
         width: calc(100% - 200px);
         height: 100%;
         overflow: auto;
-        padding-top: 80px;
+        padding-top: 85px;
+        padding-bottom: 10px;
+        background-color: #141922;
+    }
+
+    section {
+        margin: 25px 0;
+    }
+
+    .title {
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        color: #fff;
+    }
+
+    span {
+        color: #797b80;
+        font-size: .8rem;
     }
 
     #upgrade {
-        width: 100%;
+        width: calc(100% - 200px);
         height: 80px;
         background-color: rgba(0, 0, 0, .4);
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
+    }
+
+    #upgrade a {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        color: #fff;
+        padding: 8PX 25px;
+        border: 1.4px solid white;
+        border-radius: 20px;
+    }
+
+    .center a {
+        margin-inline: 15px;
+    }
+
+    /* CARD STYLE */
+    .card {
+        width: calc((100% / 6) - 20px);
+        margin-left: 15px;
+    }
+    
+    .card > .circle {
+        margin-bottom: 15px;
+        width: 100%;
+        height: calc(((100vw - 200px) / 6) - 20px);
+    }
+
+    .circle img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    /* main versione tablet md */
+    @media screen and (max-width:768px) {
+        .card {
+            width: calc((100% / 4) - 20px);
+        }
+
+        .card > .circle {
+            height: calc(((100vw - 200px) / 4) - 20px);
+        }
+    }
+
+    /* main versione small device s */
+    @media screen and (max-width:576px) {
+        .card {
+            width: calc((100% / 2) - 20px);
+        }
+
+        .card > .circle {
+            height: calc(((100vw - 200px) / 2) - 20px);
+        }
+    }
+
+    /* main versione extra-small device xs */
+    @media screen and (max-width:420px) {
+
+        #nav-side{
+            width: 40px;
+        }
+
+        main, #upgrade {
+            width: calc(100% - 40px);
+        }
+
+        .card {
+            width: calc((100% / 2) - 20px);
+        }
+
+        .card > .circle {
+            height: calc(((100vw - 40px) / 2) - 20px);
+        }
     }
 
 
@@ -35,14 +157,12 @@
 /* FOOTER */
 footer {
     height: 80px;
-    background-color: teal;
+    background-color: #282828;
 }
+
+
+
+
 
 /* DEBUG */
-#upper {
-    background-color: #a0a0a0;
-}
 
-main {
-    background-color: orangered;
-}
