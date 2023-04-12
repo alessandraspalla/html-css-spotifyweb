@@ -17,71 +17,100 @@
     <div id="upper">
         <!-- barra nav laterale -->
         <div id="nav-side">
-            <img id="logo-big" src="img/logo.svg" alt="logo spotify">
 
-            <ul class="search-bar">
-                <li>
-                    <i class="fa-solid fa-house"></i>
-                    Home
-                </li>
-                <li>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    Cerca
-                </li>
-                <li>
-                    <i class="fa-solid fa-lines-leaning"></i>
-                    La tua libreria
-                </li>
-            </ul>
+            <!-- VERSIONE LG MD SM -->
+            <div id="big-screen">
+                <img id="logo-big" src="img/logo.svg" alt="logo spotify">
 
-            <h3>
-                PLAYLIST
-            </h3>
-            <span>
-                <i class="fa-solid fa-square-plus"></i>
-                Crea Playlist
-            </span>
-            <div id="playlist">
-                <ul>
-                    <li>
-                        Nome Playlist
+                <ul class="search-bar">
+                    <li class="active">
+                        <i class="fa-solid fa-house"></i>
+                        Home
                     </li>
                     <li>
-                        Nome Playlist
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Cerca
                     </li>
                     <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
-                    </li>
-                    <li>
-                        Nome Playlist
+                        <i class="fa-solid fa-lines-leaning"></i>
+                        La tua libreria
                     </li>
                 </ul>
-            </div>
 
-            <div id="user">
-                <div class="install">
+                <h3>
+                    PLAYLIST
+                </h3>
+                <span>
+                    <i class="fa-solid fa-square-plus"></i>
+                    Crea Playlist
+                </span>
+                <div id="playlist">
                     <ul>
                         <li>
-                            <i class="fa-regular fa-circle-down"></i>
-                            Installa
-                        </li>             
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
+                        <li>
+                            Nome Playlist
+                        </li>
                     </ul>
                 </div>
-                
-                <h3>
-                    <i class="fa-solid fa-circle-user"></i>
-                    Jhon Doe
-                </h3>
+
+                <div id="user">
+                    <div class="install">
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-circle-down"></i>
+                                Installa
+                            </li>             
+                        </ul>
+                    </div>
+                    
+                    <h3>
+                        <i class="fa-solid fa-circle-user"></i>
+                        Jhon Doe
+                    </h3>
+                </div>
             </div>
+
+            <!-- VERSIONE XS -->
+            <div id="small-screen">
+                <ul>
+                    <li>
+                        <img src="img/logo-small.svg" alt="logo spotify">
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-lines-leaning"></i>
+                    </li>
+                </ul>
+
+                <div class="user">
+                    <i class="fa-regular fa-circle-down"></i>
+
+                    <i class="fa-solid fa-circle-user"></i>
+                </div>
+            </div>
+            
             
         </div>
 
@@ -96,7 +125,7 @@
 
             <!-- contenuto principale -->
             <div class="center">
-                <a href="#">
+                <a class="attivo" href="#">
                     IN EVIDENZA
                 </a>
                 <a href="#">
@@ -243,11 +272,11 @@
                     <!-- album -->
                     <div class="circle card center">
                         <div class="circle">
-                            <img src="img/player_left.jpg" alt="album clark griswold">
+                            <img src="img/youg.jpeg" alt="album clark griswold">
                         </div>
                         
                         <h3>
-                            Clark Griswold
+                            Lana del Rey
                         </h3>
                     </div>
 
@@ -268,7 +297,20 @@
 
     <!-- playbar inferiore -->
     <footer>
+        <div class="row between-lg">
+            <div class="col-lg-2 col-md-3 col-sm col-xs-4">
 
+            </div>
+
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-4">
+                
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-sm col-xs-4">
+                
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
