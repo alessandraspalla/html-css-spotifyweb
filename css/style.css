@@ -28,7 +28,6 @@ a {
 
 img {
     width: 100%;
-    margin-bottom: 15px;
 }
 
 /* PARTE SUPERIORE CONTENUTO */
@@ -142,6 +141,10 @@ img {
 
     section {
         margin: 25px 0;
+    }
+
+    section img, #nav-side img {
+        margin-bottom: 15px;
     }
 
     .title {
@@ -274,8 +277,44 @@ footer {
     z-index: 999;
 }
 
+.flex-container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
 
+.image {
+    width: 50px;
+    margin-inline: 10px;
+}
 
+.text h3, .text span {
+    margin-bottom: 0;
+}
+
+.icon i {
+    color: #fff;
+    margin-inline: 5px;
+}
+
+.flex-container.right{
+    justify-content: flex-end;
+}
+
+.flex-container.right .icon {
+    margin-right: 110px;
+}
+
+.volume {
+    display: block;
+    width: 100px;
+    height: 2.5px;
+    background-color: #797b80;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0, -50%);
+}
 
 
 
