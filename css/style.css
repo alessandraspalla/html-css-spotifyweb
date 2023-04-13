@@ -48,9 +48,32 @@ img {
 
     #logo-big {
         width: 120px;
+        margin-bottom: 15px;
+    }
+
+    #big-screen {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icone-svg {
+        width: 20px;
+        line-height: 20px;
+        vertical-align: middle;
+        filter: invert(51%) sepia(7%) saturate(216%) hue-rotate(185deg) brightness(93%) contrast(93%);
+    }
+
+    .icone-svg.profilo {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #797b80;
+        filter: none;
     }
 
     .active {
+        
         border-left: 4px solid #94c72e;
         padding-left: 11px;
         margin-left: -15px;
@@ -69,7 +92,7 @@ img {
 
     #playlist {
         overflow-y: scroll;
-        height: 100px;
+        flex-grow: 1;
     }
 
     .install {
@@ -80,9 +103,6 @@ img {
 
     #user {
         width: calc(100% - 30px);
-        position: absolute;
-        bottom: 0;
-        left: 15px;
     }
 
     #small-screen {
@@ -106,11 +126,7 @@ img {
         }
 
         #small-screen img {
-            margin-bottom: 0;
-        }
-
-        #nav-side i {
-            font-size: 1.5rem;
+            margin-bottom: 5px;
         }
 
         .user {
@@ -142,10 +158,6 @@ img {
 
     section {
         margin: 25px 0;
-    }
-
-    #nav-side img {
-        margin-bottom: 15px;
     }
 
     .title {
@@ -451,4 +463,8 @@ footer .row {
 
 a:hover {
     color: #fff;
+}
+
+a:hover .icone-svg {
+    filter: none
 }
