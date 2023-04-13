@@ -143,7 +143,7 @@ img {
         margin: 25px 0;
     }
 
-    section img, #nav-side img {
+    #nav-side img {
         margin-bottom: 15px;
     }
 
@@ -177,6 +177,7 @@ img {
         position: fixed;
         top: 0;
         right: 0;
+        z-index: 999;
     }
 
     #upgrade a {
@@ -227,6 +228,22 @@ img {
         height: 100%;
         width: 100%;
         border-radius: 50%;
+    }
+
+    .card .img {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .layover {
+        font-size: 2.5rem;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 900;
+        display: none;
     }
 
     /* main versione tablet md */
@@ -418,8 +435,15 @@ footer .row {
 
 
 
-/* DEBUG */
-.col-lg-2, .col-lg-4 {
-    height: 80px;
-    border: 1px solid white;
+/* EFFETTI HOVER */
+.img:hover .layover {
+    display: block;
+}
+
+.img:hover img {
+    opacity: .4;
+}
+
+#upgrade a:hover {
+    padding: 2px 30px;
 }
