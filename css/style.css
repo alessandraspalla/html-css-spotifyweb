@@ -448,3 +448,7 @@ footer .row {
 #upgrade a:hover {
     padding: 2px 30px;
 }
+
+a:hover {
+    color: #fff;
+}
