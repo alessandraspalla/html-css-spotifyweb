@@ -30,6 +30,10 @@ img {
     width: 100%;
 }
 
+.icon i.grey {
+    color: #797b80;
+}
+
 /* PARTE SUPERIORE CONTENUTO */
 #upper {
     display: flex;
@@ -72,11 +76,18 @@ img {
         filter: none;
     }
 
-    .active {
-        
+    .active {     
         border-left: 4px solid #94c72e;
         padding-left: 11px;
         margin-left: -15px;
+    }
+
+    .active a {
+        color: #fff;
+    }
+
+    .active .icone-svg {
+        filter:none
     }
 
     .search-bar i {
@@ -363,8 +374,30 @@ footer .row {
     display: inline-block;
     width: 300px;
     height: 2.5px;
-    background-color: #fff;
+    background-color: #797b80;
     margin-bottom: 3px;
+    position: relative;
+}
+
+.progressione {
+    background-color: #94c72e;
+    width: 25%;
+    height: 2.5px;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+.cerchio {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    display: none;
 }
 
 .flex-container.right{
@@ -467,4 +500,16 @@ a:hover {
 
 a:hover .icone-svg {
     filter: none
+}
+
+#barra:hover .progressione, .cerchio {
+    display: block;
+}
+
+.volume:hover .progressione, .cerchio {
+    display: block;
+}
+
+.item .fa-circle-play:hover {
+    font-size: 2rem;
 }
