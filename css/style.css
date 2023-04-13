@@ -52,7 +52,7 @@ img {
 
     .active {
         border-left: 4px solid #94c72e;
-        padding-left: 15px;
+        padding-left: 11px;
         margin-left: -15px;
     }
 
@@ -277,6 +277,10 @@ footer {
     z-index: 999;
 }
 
+footer .row {
+    justify-content: space-between;
+}
+
 .flex-container {
     display: flex;
     height: 80px;
@@ -284,17 +288,53 @@ footer {
 }
 
 .image {
-    width: 50px;
+    width: 40px;
     margin-inline: 10px;
+}
+
+.text h3 {
+    font-size: .65rem;
+}
+
+.text span {
+    font-size: .6rem;
 }
 
 .text h3, .text span {
     margin-bottom: 0;
+    margin-right: 20px; 
 }
 
 .icon i {
+    font-size: .75rem;
     color: #fff;
-    margin-inline: 5px;
+    margin-inline: 3.5px;
+}
+
+.icon.center .fa-circle-play{
+    font-size: 1.5rem;
+}
+
+.icon.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.center i {
+    margin-inline: 10px;
+}
+
+.song-bar span {
+    margin-bottom: 0;
+}
+
+#barra {
+    display: inline-block;
+    width: 300px;
+    height: 2.5px;
+    background-color: #fff;
+    margin-bottom: 3px;
 }
 
 .flex-container.right{
@@ -316,6 +356,65 @@ footer {
     transform: translate(0, -50%);
 }
 
+    /* versione tablet md */
+    @media screen and (max-width:768px) {
+        .icon i {
+            margin-inline: 2px;
+        }
+
+        .text h3, .text span {
+            margin-right: 0; 
+        }
+
+        #barra {
+            width: 210px;
+        }
+
+        .flex-container.right .icon {
+            margin-right: 85px;
+        }
+
+        .volume {
+            width: 75px;
+        }
+    }
+
+    /* versione smartphone sm */
+    @media screen and (max-width:576px) {
+
+        .image {
+            width: 30px;
+            margin-right: 5px;
+        }
+
+        .fa-heart {
+            display: block;
+        }
+
+        .icon i {
+            margin-inline: 1.8px;
+        }
+
+        #barra {
+            width: 100px;
+        }
+
+        .flex-container.right .icon {
+            margin-right: 70px;
+        }
+
+        .volume {
+            width: 60px;
+        }
+    }
+
+    /* versione extrasmall xs */
+    @media screen and (max-width:420px) {
+        .text {
+            width: 35px;
+            margin-right: 10px;
+        }
+    }
 
 
 
