@@ -513,3 +513,11 @@ a:hover .icone-svg {
 .item .fa-circle-play:hover {
     font-size: 2rem;
 }
+
+#titolo-canzone:hover {
+    text-decoration: underline;
+}
+
+.icon:hover i {
+    color: #fff;
+}
